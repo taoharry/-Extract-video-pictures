@@ -51,8 +51,6 @@ missing module named cStringIO.StringIO - imported by cStringIO, gettext, pprint
 missing module named struct.calcsize - imported by struct, ctypes
 missing module named _struct.__doc__ - imported by _struct, struct
 missing module named _struct._clearcache - imported by _struct, struct
-missing module named sys.stderr - imported by sys, smtplib
-missing module named sys.py3kwarning - imported by sys, httplib
 missing module named _subprocess.STD_OUTPUT_HANDLE - imported by _subprocess, subprocess
 missing module named _subprocess.CREATE_NEW_PROCESS_GROUP - imported by _subprocess, subprocess
 missing module named _subprocess.STD_INPUT_HANDLE - imported by _subprocess, subprocess
@@ -83,6 +81,7 @@ missing module named datetime.date - imported by datetime, _strptime
 missing module named _functools.partial - imported by _functools, functools
 missing module named _functools.reduce - imported by _functools, functools
 missing module named _hashlib.pbkdf2_hmac - imported by _hashlib, hashlib
+missing module named os.urandom - imported by os, random
 missing module named math.sin - imported by math, random
 missing module named math.sqrt - imported by math, random
 missing module named math.cos - imported by math, random
@@ -105,6 +104,9 @@ missing module named _io.StringIO - imported by _io, io
 missing module named _io.BufferedRWPair - imported by _io, io
 missing module named _io.TextIOWrapper - imported by _io, io
 missing module named _io.UnsupportedOperation - imported by _io, io
+missing module named nt._isdir - imported by nt, ntpath
+missing module named nt._getfullpathname - imported by nt, ntpath
+missing module named nt._exit - imported by nt, os
 missing module named _ctypes.call_function - imported by _ctypes, pyreadline.console.console
 missing module named _ctypes._wstring_at_addr - imported by _ctypes, ctypes
 missing module named _ctypes._string_at_addr - imported by _ctypes, ctypes
@@ -150,13 +152,13 @@ missing module named pyreadline.keysyms.make_KeyPress_from_keydescr - imported b
 missing module named pyreadline.keysyms.make_keysym - imported by pyreadline.keysyms, pyreadline.console.ironpython_console
 missing module named startup - imported by pyreadline.keysyms.common, pyreadline.keysyms.keysyms
 missing module named System - imported by pyreadline.clipboard.ironpython_clipboard, pyreadline.keysyms.ironpython_keysyms, pyreadline.console.ironpython_console, pyreadline.rlmain
+missing module named pwd - imported by posixpath, getpass
 missing module named _scproxy._get_proxy_settings - imported by _scproxy, urllib
 missing module named _scproxy._get_proxies - imported by _scproxy, urllib
 missing module named _scproxy - imported by urllib
 missing module named EasyDialogs.AskPassword - imported by EasyDialogs, getpass
 missing module named EasyDialogs - imported by getpass
 missing module named termios - imported by getpass
-missing module named pwd - imported by posixpath, getpass
 missing module named SOCKS - imported by ftplib
 missing module named socket.SO_TYPE - imported by socket, ssl
 missing module named socket.SOL_SOCKET - imported by socket, ssl
@@ -204,6 +206,8 @@ missing module named _ssl.SSL_ERROR_SYSCALL - imported by _ssl, socket
 missing module named rourl2path.url2pathname - imported by rourl2path, urllib
 missing module named rourl2path.pathname2url - imported by rourl2path, urllib
 missing module named rourl2path - imported by urllib
+missing module named sys.py3kwarning - imported by sys, httplib
+missing module named sys.stderr - imported by sys, smtplib
 missing module named IronPythonConsole - imported by pyreadline.console.ironpython_console
 missing module named clr - imported by pyreadline.clipboard.ironpython_clipboard, pyreadline.console.ironpython_console
 missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle
@@ -211,7 +215,6 @@ missing module named 'org.python' - imported by pickle
 missing module named fcntl - imported by tempfile, subprocess
 missing module named threading.RLock - imported by threading, _threading_local
 missing module named threading.current_thread - imported by threading, _threading_local
-missing module named os.urandom - imported by os, random
 missing module named riscosenviron._Environ - imported by riscosenviron, os
 missing module named riscosenviron - imported by os
 missing module named riscospath - imported by os
@@ -223,9 +226,6 @@ missing module named _emx_link.link - imported by _emx_link, os
 missing module named _emx_link - imported by os
 missing module named os2._exit - imported by os2, os
 missing module named os2 - imported by os
-missing module named nt._isdir - imported by nt, ntpath
-missing module named nt._getfullpathname - imported by nt, ntpath
-missing module named nt._exit - imported by nt, os
 missing module named posix._exit - imported by posix, os
 missing module named posix - imported by os
 missing module named resource - imported by posix

@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['mvtoimg.py'],
-             pathex=['C:\\Users\\libing\\Desktop\\get_pic_from_mv'],
+             pathex=['C:\\Users\\libing\\Desktop\\mv_to_img'],
              binaries=None,
              datas=None,
              hiddenimports=[],

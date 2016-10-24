@@ -4,7 +4,7 @@ import os
 
 from PyQt4 import QtGui,QtCore
 import sys
-
+import subprocess
 
 def mv_to_img():
     cmd = 'ffmpeg -i text.avi -r 3   text/%05d.png'
@@ -61,15 +61,15 @@ class get_imginmv(QtGui.QWidget):
         if not self.picEdit.text():
             QMessageBox.information(self, '提示', '请输入图片后缀名')
             return
-        mv = str(self.mvEdit.text().toUtf8())
+        mv = unicode(self.mvEdit.text().toUtf8(),'utf8','ignore').encode('gb2312')
         frame = float(self.imgEdit.text())
+        print mv
         picfile = mv.split('.')[0]
-        print type(picfile),picfile
-        makedir(picfile.decode('utf-8').encode('gbk'))
-        #os.mkdir(picfile)
-        formatl = self.picEdit.text()
+        makedir(picfile)
+        formatl = unicode(self.picEdit.text(),'gbk','ignore')
         cmd = 'ffmpeg -i {mvname} -r {frame} {picfile}/%05d.{formatl}'\
-              .format(mvname=mv.decode('utf-8').encode('gbk'),frame=frame,picfile=picfile.decode('utf-8').encode('gbk'),formatl=formatl)
+              .format(mvname=mv,frame=frame,picfile=picfile,formatl=formatl)
+        print cmd
         os.system(cmd)
         
 app = QtGui.QApplication(sys.argv)
